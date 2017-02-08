@@ -1,9 +1,9 @@
 import socket 
  
 s= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(("0.0.0.0", 12344))
+s.bind(("0.0.0.0", 443))
 s.listen(2)
-print "Listening on port 65511... "
+print "Listening on port 443... "
 (client, (ip, port)) = s.accept()
 print " Received connection from : ", ip
  
